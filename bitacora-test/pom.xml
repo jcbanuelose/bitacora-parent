@@ -6,4 +6,46 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>bitacora-test</artifactId>
+  
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>${jdk.version}</source>
+				<target>${jdk.version}</target>
+			</configuration>
+		</plugin>
+	</plugins>
+   </build>
+   <dependencies>
+   		<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>mx.habil</groupId>
+            <artifactId>bitacora-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mx.habil</groupId>
+            <artifactId>bitacora-model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>mx.habil</groupId>
+            <artifactId>bitacora-business</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+   </dependencies>
 </project>
